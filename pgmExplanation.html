@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Explained</title>
+
+    <h1>Simple Calculator in C++ Explained</h1><hr>
+
+    <style>
+        h1 {text-align: center;}
+        hr {width: 40%;}
+        .code {padding-left: 3%;}
+    </style>
+</head>
+<body>
+    <code>
+        <h2>Full Code</h2>
+        <p class="code">
+            // C++ program to create calculator using <br>
+            // switch statement <br>
+            #include <iostream> <br>
+            using namespace std; <br><br>
+            
+            // Main program <br>
+            main() <br><br>
+            { <br>
+                &emsp;char op; <br>
+                &emsp;float num1, num2; <br><br>
+            
+                &emsp;// It allows user to enter operator i.e. +, -, *, / <br>
+                &emsp;cin >> op; <br><br>
+            
+                &emsp;// It allow user to enter the operands <br>
+                &emsp;cin >> num1 >> num2; <br><br>
+            
+                &emsp;// Switch statement begins <br>
+                &emsp;switch (op) { <br><br>
+                    
+                    &emsp;&emsp;// If user enter + <br>
+                    &emsp;&emsp;case '+': <br>
+                    &emsp;&emsp;&emsp;&emsp;cout << num1 + num2; <br>
+                    &emsp;&emsp;&emsp;&emsp;break; <br><br>
+                    
+                    &emsp;&emsp;// If user enter - <br>
+                    &emsp;&emsp;case '-': <br>
+                    &emsp;&emsp;&emsp;&emsp;cout << num1 - num2; <br>
+                    &emsp;&emsp;&emsp;&emsp;break; <br><br>
+                    
+                    &emsp;&emsp;// If user enter * <br>
+                    &emsp;&emsp;case '*': <br>
+                    &emsp;&emsp;&emsp;&emsp;cout << num1 * num2; <br>
+                    &emsp;&emsp;&emsp;&emsp;break; <br><br>
+                    
+                    &emsp;&emsp;// If user enter / <br>
+                    &emsp;&emsp;case '/': <br>
+                    &emsp;&emsp;&emsp;&emsp;cout << num1 / num2; <br>
+                    &emsp;&emsp;&emsp;&emsp;break; <br><br>
+                    
+                    &emsp;&emsp;// If the operator is other than +, -, * or /, <br>
+                    &emsp;&emsp;// error message will display <br>
+                    &emsp;&emsp;default: <br>
+                    &emsp;&emsp;&emsp;&emsp;cout << "Error! operator is not correct"; <br>
+                    &emsp;&emsp;&emsp;&emsp;break; <br>
+                    &emsp;} // switch statement ends <br><br>
+            
+                    &emsp;return 0; <br>
+            }
+        </p>
+
+        <h2>Why a Simple Calculator?</h2>
+        <p>
+            This is a simple calculator that anyone can make in c++. There is a simpler calculator but that would only do one mathmatical operation such as addition. While making a c++ program to add any two numbers is great for starting out (ex: 3+3), but there wouldn't be much to explain. <br><br>
+
+            The way the program works is it takes the operand (ex: +) and then two numbers (ex: 3 3) and then the program finds the switch statement that corresponds with the operand. In our example the code is finding the + operand and then what's inside the switch statement which would be num + num. In our example this would be 3+3 and it would then give use our answer of 6 as an output.
+        </p>
+
+        <h2>Example Input #1</h2>
+        <p>
+            Input:
+            + 10 21
+        </p>
+        <p>
+            Output: 31
+        </p>
+        <h3>Code Used:</h3>
+        <p class="code">
+            main() <br><br>
+            { <br>
+                char op; <br>
+                float num1, num2; <br><br>
+            
+                // It allows user to enter operator i.e. +, -, *, / <br>
+                cin >> op; <br><br>
+            
+                // It allow user to enter the operands <br>
+                cin >> num1 >> num2; <br><br>
+
+                // Switch statement begins <br>
+                switch (op) { <br><br>
+                    
+                    // If user enter + <br>
+                    case '+': <br>
+                        cout << num1 + num2; <br>
+                        break; <br><br>
+        </p>
+
+        <h2>Example Input #2</h2>
+        <p>
+            Input: / 10 2
+        </p>
+        <p>
+            Output: 5
+        </p>
+        <h3>Code Used:</h3>
+        <p class="code">
+            main() <br><br>
+            { <br>
+                char op; <br>
+                float num1, num2; <br><br>
+            
+                // It allows user to enter operator i.e. +, -, *, / <br>
+                cin >> op; <br><br>
+            
+                // It allow user to enter the operands <br>
+                cin >> num1 >> num2; <br><br>
+
+                // Switch statement begins <br>
+                switch (op) { <br><br>
+
+                    // If user enter / <br>
+                    case '/': <br>
+                        cout << num1 / num2; <br>
+                        break; <br><br>
+        </p>
+
+        <h2><a href="https://www.geeksforgeeks.org/c-c-program-to-make-a-simple-calculator/">GeeksforGeeks</a> Quote</h2>
+        <q>A simple calculator can be made using a C++ program which is able to add, subtract, multiply and divide, two operands entered by the user. The switch and break statement is used to create a calculator.</q>
+
+        <h2>Fun Fact</h2>
+        <p>
+            Switch statements were used here but another method can be used is if and else statements. The only issue with that is that users won't get errors if they use the program in a way it wasn't meant to be used.
+        </p>
+    </code>
+</body>
+</html>

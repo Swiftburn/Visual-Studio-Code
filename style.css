@@ -1,0 +1,28 @@
+
+*{text-align: center;}
+hr{width: 50%;}
+p{font-style: italic; color: blue;}
+h2{font-variant: small-caps;}
+.bold {font-weight: bold;}
+.huge-font {font-size: xx-large;}
+body {font-family: Courier, monospace;}
+
+h1 {border: thin dotted blue;}
+h2 {border: 10px solid blue;}
+   
+.red{background-color:aqua; color: red;}
+.white{color: white;}
+.blue{color: blue;}
+   
+q.red{background-color: red; color: black;}
+q.blue{background-color: cyan; color: red;}
+    
+
+    
+#Obama-Quote{background-color: yellow;color: crimson;}
+    
+/*.orange{color: orange;}*/
+.eggplant{color: rgb(52%, 20%, 9%);}
+.color{color: white;}
+.black{color: black;}
+.orange-background{background-color: orange;}
