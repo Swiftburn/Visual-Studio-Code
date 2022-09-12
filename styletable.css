@@ -1,0 +1,21 @@
+body{
+    display: flex; justify-content: center;
+}
+table, th, td{
+    border: none;
+}
+th, td{
+    padding: 10px;
+}
+thead th{
+    background-color: midnightblue;
+    color: wheat;
+}
+tbody th{
+    background-color: mediumvioletred;
+    color: white;
+}
+td{
+    background-color: mistyrose;
+    text-align: center;
+}
