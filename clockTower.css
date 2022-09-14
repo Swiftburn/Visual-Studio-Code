@@ -1,0 +1,10 @@
+header{
+    text-align: center;
+}
+.table{
+    display: table;
+}
+.cell{
+    display: table-cell;
+    padding: 0px 10px 10px;
+}
