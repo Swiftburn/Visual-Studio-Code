@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>Compound Interest</title>
+</head>
+<body>
+    <h3>Compound Interest Calculator</h3>
+    <form action="table" id="input">
+        <div class="row">
+            <label for="deposit"> Initial Deposit: </label>
+            <input type="number" id="deposit" min="1" max="9999" step="1" required>
+        </div>
+        <div class="row">
+            <label for="rate"> Annual Interest Rate: </label>
+            <input type="number" id="rate" min="0" max="100" step=".1" required>
+        </div>
+        <div class="row">
+            <label for="years"> Years to grow: </label>
+            <input type="number" id="years" min="1" max="20" step="1" required>
+        </div>
+
+    </form>
+</body>
+</html>
