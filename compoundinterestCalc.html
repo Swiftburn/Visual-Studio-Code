@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Adolfo Barrientos">
     <title>Compound Interest</title>
+    <script src="compoundInterest.js"></script>
 </head>
 <body>
     <h3>Compound Interest Calculator</h3>
@@ -21,7 +22,10 @@
             <label for="years"> Years to grow: </label>
             <input type="number" id="years" min="1" max="20" step="1" required>
         </div>
-
     </form>
+    <br>
+    <input type="button" form="input" value="Generate Compound Interest" onclick="generateTable(this.form);">
+    <br><br>
+    <div id="result"></div>
 </body>
 </html>
