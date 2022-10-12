@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>My First JSON! Yay!</title>
+    <script>
+        let companies = [
+            {
+                name:"Big Corporation",
+                numberofEmployees : 1000,
+                CEO: "Mary",
+                rating: 3.6
+            },
+            {
+                name:"Small Startup",
+                numberofEmployees : 10,
+                CEO: null,
+                rating: 4.3
+            }
+        ]
+
+       /* console.log(companies)*/
+
+        const myObj = JSON.stringify(companies);
+        localStorage.setItem("testJSON",myObj);
+        /*console.log(myObj);*/
+        /*console.log(JSON.parse(companies)[0].CEO)*/
+
+        console.log(JSON.parse(myObj))
+        console.log(JSON.parse(myObj)[0])
+        console.log(JSON.parse(myObj)[0].rating)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
