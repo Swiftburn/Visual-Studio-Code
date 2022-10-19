@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>Quadratic Equation Roots Calculator</title>
+    <script src="rootsCalculator.js"></script>
+</head>
+<body>
+    <h1>Quadratic Equation Roots Calculator</h1>
+    <div>
+        <p>
+            This web page finds the roots of a polynomial equation of the following form: <br>
+
+            ax<sup>2</sup> + bx + c = 0
+        </p>
+        
+        <p>a, b, and c must be integers between -99 and +99, and a must be non-zero.</p>
+    </div>
+
+    <form action="table" id="input">
+        <div>
+            <label for="a">a</label>
+            <input type="number" id="" min="-99" max="99" step="1" required>
+        </div>
+        <div>
+            <label for="b">b</label>
+            <input type="number" id="" min="-99" max="99" step="1" required>
+        </div>
+        <div>
+            <label for="c">c</label>
+            <input type="number" id="" min="-99" max="99" step="1" required>
+        </div>
+    </form><br>
+
+    <input type="button" form="input" value="Calculate roots" onclick=""><br><br>
+
+    <div id="result"></div>
+</body>
+</html>
