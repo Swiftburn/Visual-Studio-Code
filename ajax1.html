@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>My First API Call</title>
+</head>
+<body>
+    <button id="countryButton" onclick="showCountries()">Load Country on Click!</button>
+    <script>
+        function showCountries(){
+
+            let flag = document.createElement('img')
+            let country = document.createElement('p')
+            
+            document.body.appendChild(country)
+            document.body.appendChild(flag)
+
+            let url = "https://restcountries.com/v2/all"
+            console.log("Let's GO!!")
+
+            fetch(url)
+            .then(Response =>{
+                return Response.json()
+            })
+            .then(json =>{
+                country.innerHTML = json[25].name //innerHTML for p tag
+                flag.src = json[25].flag //Any number can be chosen, flag.src for images
+                console.log("Flag Added!")
+            })
+            .catch(err=>{
+                console.log('Errors:' + err.message)
+            })
+        }
+    </script>
+</body>
+</html>
