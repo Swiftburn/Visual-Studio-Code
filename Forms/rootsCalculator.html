@@ -6,6 +6,7 @@
     <meta name="author" content="Adolfo Barrientos">
     <title>Quadratic Equation Roots Calculator</title>
     <script src="rootsCalculator.js"></script>
+    <link rel="stylesheet" href="rootsCalculator.css">
 </head>
 <body>
     <h1>Quadratic Equation Roots Calculator</h1>
@@ -20,21 +21,21 @@
     </div>
 
     <form action="table" id="input">
-        <div>
+        <div id="box">
             <label for="a">a</label>
-            <input type="number" id="" min="-99" max="99" step="1" required>
+            <input type="number" id="a" min="-99" max="99" step="1" required>
         </div>
-        <div>
+        <div id="box">
             <label for="b">b</label>
-            <input type="number" id="" min="-99" max="99" step="1" required>
+            <input type="number" id="b" min="-99" max="99" step="1" required>
         </div>
-        <div>
+        <div id="box">
             <label for="c">c</label>
-            <input type="number" id="" min="-99" max="99" step="1" required>
+            <input type="number" id="c" min="-99" max="99" step="1" required>
         </div>
     </form><br>
 
-    <input type="button" form="input" value="Calculate roots" onclick=""><br><br>
+    <input type="button" form="input" value="Calculate roots" onclick="solution(this.form);"><br><br>
 
     <div id="result"></div>
 </body>
