@@ -1,0 +1,5 @@
+input:invalid {outline-color: red;}
+#box{
+    display: inline;
+    margin-right: 15px;
+}
