@@ -30,50 +30,50 @@ function solution(form){
 
     //checks a, b, c for non integers and a for 0
     if (a == 0 || Number.isInteger(a) == false || a < -99 || a > 99){
-        console.log("a is not an integer or cannot be 0")
+        console.log("Invalid entry for a. Must be a non-zero integer between -99 and +99.")
         if (Number.isInteger(b) == false || b < -99 || b > 99){
-            console.log("b is not an integer")
+            console.log("Invalid entry for b. Must be an integer between -99 and +99.")
             if (Number.isInteger(c) == false || c < -99 || c > 99){
-                console.log("c is not an integer")
+                console.log("Invalid entry for c. Must be an integer between -99 and +99.")
                 document.getElementById("a").style.border = "2px solid red";
                 document.getElementById("b").style.border = "2px solid red";
                 document.getElementById("c").style.border = "2px solid red";
-                alert("a is not an integer or cannot be 0 \nb is not an integer \nc is not an integer")
+                alert("Invalid entry for a. Must be a non-zero integer between -99 and +99. \nInvalid entry for b. Must be an integer between -99 and +99. \nInvalid entry for c. Must be an integer between -99 and +99.")
                 return;
             }
             document.getElementById("a").style.border = "2px solid red";
             document.getElementById("b").style.border = "2px solid red";
-            alert("a is not an integer or cannot be 0 \nb is not an integer")
+            alert("Invalid entry for a. Must be a non-zero integer between -99 and +99. \nInvalid entry for b. Must be an integer between -99 and +99.")
             return;
         }
         if (Number.isInteger(c) == false || c < -99 || c > 99){
-            console.log("c is not an integer")
+            console.log("Invalid entry for c. Must be an integer between -99 and +99.")
             document.getElementById("a").style.border = "2px solid red";
             document.getElementById("c").style.border = "2px solid red";
-            alert("a is not an integer or cannot be 0 \nc is not an integer")
+            alert("Invalid entry for a. Must be a non-zero integer between -99 and +99. \nInvalid entry for c. Must be an integer between -99 and +99.")
             return
         }
         document.getElementById("a").style.border = "2px solid red";
-        alert("a is not an integer or cannot be 0")
+        alert("Invalid entry for a. Must be a non-zero integer between -99 and +99.")
         return;
     }
     else if (Number.isInteger(b) == false || b < -99 || b > 99){
-        console.log("b is not an integer")
+        console.log("Invalid entry for b. Must be an integer between -99 and +99.")
         if (Number.isInteger(c) == false || c < -99 || c > 99){
-            console.log("c is not an integer")
+            console.log("Invalid entry for c. Must be an integer between -99 and +99.")
             document.getElementById("b").style.border = "2px solid red";
             document.getElementById("c").style.border = "2px solid red";
-            alert("b is not an integer \nc is not an integer")
+            alert("Invalid entry for b. Must be an integer between -99 and +99. \nInvalid entry for c. Must be an integer between -99 and +99.")
             return;
         }
         document.getElementById("b").style.border = "2px solid red";
-        alert("b is not an integer")
+        alert("Invalid entry for b. Must be an integer between -99 and +99")
         return;
     }
     else if (Number.isInteger(c) == false || c < -99 || c > 99){
-        console.log("c is not an integer")
+        console.log("Invalid entry for c. Must be an integer between -99 and +99.")
         document.getElementById("c").style.border = "2px solid red";
-        alert("c is not an integer")
+        alert("Invalid entry for c. Must be an integer between -99 and +99.")
         return;
     }
     else {
