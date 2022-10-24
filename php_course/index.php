@@ -63,6 +63,7 @@ $string = "Hello World!";
 echo strlen($string);
 echo "<br>";
 echo strrev($string);
+echo "<br>";
 
 function registerUser(){
     //$x = 10;
