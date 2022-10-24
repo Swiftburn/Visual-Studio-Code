@@ -65,7 +65,7 @@ echo "<br>";
 echo strrev($string);
 
 function registerUser(){
-    $x = 10;
+    //$x = 10;
     echo 'User Registered;';
 }
 
