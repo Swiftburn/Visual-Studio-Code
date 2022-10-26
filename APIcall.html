@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>API Call</title>
+</head>
+<body>
+    <button id="data" onclick="def()">Click Me For Dictionary Entry!</button>
+    <script>
+        function def(){
+            let num = 3
+            let entry = document.createElement('p')
+            let word = document.createElement('p')
+            let sDef = document.createElement('p')
+            let stems = document.createElement('p')
+            let speech = document.createElement('p')
+
+
+            document.body.appendChild(entry)
+            document.body.appendChild(word)
+            document.body.appendChild(speech)
+            document.body.appendChild(sDef)
+            document.body.appendChild(stems)
+
+
+
+            let url = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/test?key=192b4593-3bb6-46e2-9417-a37b03271b5e"
+            console.log("API Call Successful!")
+
+            fetch(url)
+            .then (Response =>{
+                return Response.json()
+            })
+            .then(json =>{
+                entry.innerHTML = "Entry: " + json[num].hom
+                console.log("id added!")
+
+                word.innerHTML = "Word: " + json[num].meta.src
+                console.log("word added!")
+                
+                speech.innerHTML = "Parts of Speech: " + json[num].fl
+                console.log("Parts of Speech added!")
+
+                sDef.innerHTML = "Definition: " + json[num].shortdef
+                console.log("definition added!")
+
+                stems.innerHTML = "Stems: " + json[num].meta.stems
+                console.log("stems added!")                
+
+            })
+            .catch(err =>{
+                console.log('Errors: ' + err.message)
+            })
+        }
+    </script>
+
+</body>
+</html>
