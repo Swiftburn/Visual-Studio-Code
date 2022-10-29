@@ -5,6 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Adolfo Barrientos">
     <title>Rock Paper Scissors</title>
+    <script>
+        function rockPaperScissors(form){
+            console.log("Console works!")
+            let p1 = (document.getElementById("p1").value.toLowerCase());
+            let p2 = (document.getElementById("p2").value.toLowerCase());
+            console.log(p1)
+            console.log(p2)
+
+            // p1 == ("rock", "scissors");
+            // console.log(p1)
+            
+        //    if (p1 == ("rock", "scissors", p1) && 
+        //    p1 == ("scissors", "paper", p1) &&
+        //    p1 == ("paper", "rock", p1)){
+        //    console.log ("p1 wins!");}
+
+        //    if (p2 == ("scissors", "rock", p2) &&
+        //    p2 == ("paper", "scissors", p2) &&
+        //    p2 == ("rock", "paper", p2)){
+        //    console.log("p2 wins!")}
+
+            // let result = null;
+
+            // const ifVal = (p1, p2, w) =>
+            //     p1.choice == p2.choice ? (result = w) : null;
+
+            // ifVal("rock", "scissors", p1);
+            // ifVal("scissors", "paper", p1);
+            // ifVal("paper", "rock", p1);
+            // ifVal("scissors", "rock", p2);
+            // ifVal("paper", "scissors", p2);
+            // ifVal("rock", "paper", p2);
+            
+            // if (result == p1)
+            // return console.log("p1 wins!");
+
+            // if (result == p2)
+            // return consol.log("p2 wins!");
+            
+            // if (p1 != p2){
+            //     if(p1 && p2 == "rock" || "scissors", p1 && p2 != "paper"){
+            //         if (p1 == "rock")
+            //             console.log("p1 wins!")
+            //             if (p2 == "rock")
+            //             console.log("p2 wins!")
+                    
+            //     }
+
+            //     if(p1 && p2 == "paper" || "scissors", p1 && p2 != "rock"){  
+
+            //         if (p1 == "scissors")
+            //             console.log("p1 wins!")
+            //             if (p2 == "scissors")
+            //             console.log("p2 wins!")
+                        
+            //         }
+
+            //     if(p1 && p2 == "rock" || "paper", p1 && p2 != "scissors"){
+            //                 if (p1 == "paper")
+            //                 console.log("p1 wins!")
+            //                 if (p2 == "paper")
+            //                 console.log("p2 wins!")
+
+            //     }    
+            // }else return console.log("it's a tie!")
+
+
+            // if (p1 != p2){
+            //     if(p2 != "paper", p1 != "paper"){
+            //         if (p1 == "rock")
+            //             console.log("p1 wins!")
+            //             if (p2 == "rock")
+            //             console.log("p2 wins!")
+                    
+            //     }
+
+            //     if(p2 != "rock", p1 != "rock"){  
+
+            //         if (p1 == "scissors")
+            //             console.log("p1 wins!")
+            //             if (p2 == "scissors")
+            //             console.log("p2 wins!")
+                        
+            //         }
+
+            //     if(p2 != "scissors", p1 != "scissors"){
+            //                 if (p1 == "paper")
+            //                 console.log("p1 wins!")
+            //                 if (p2 == "paper")
+            //                 console.log("p2 wins!")
+                    
+            //     }  
+            //     form.reset();  
+            // }else {
+            //     form.reset();
+            //     return console.log("it's a tie!")
+            // }
+
+
+            
+            // if (p1 == p2){
+            //     console.log("tie")
+            // }else if (p1 == "rock" && p2 == "scissors"){
+            //     console.log("p1 wins!")
+            // }else if (p1 == "rock" && p2 == "scissors"){
+            //     console.log("p1 wins!")
+            // }else if (p1 == "rock" && p2 == "scissors"){
+            //     console.log("p1 wins!")
+            // }
+            
+            if(p1 === 'rock' || p1 === 'paper' || p1 === 'scissors'){
+                console.log("p1 check passed!")
+            }else console.log("Invalid move of Player 1 " + p1)
+
+            if(p2 === 'rock' || p2 === 'paper' || p2 === 'scissors'){
+                console.log("p2 check passed!")
+            }else return console.log("Invalid move of Player 2 " + p2)
+
+            
+            // if (p1 != "rock", "scissors", "paper" && p2 != "rock", "scissors", "paper"){
+            //     if (p1 != "rock", "scissors", "paper"){
+                    
+            //         if (p2 != "rock", "scissors", "paper"){
+            //         console.log("Invalid move of Player 2 " + p2)
+            //         } else return console.log("Invalid move of Player 1 " + p1)
+                    
+            //     }
+            //     if (p2 != "rock", "scissors", "paper"){
+            //         console.log("Invalid move of Player 2 " + p2)
+            //     }return;
+            // } else return console.log("Invalid move of Player 1 " + p1 + " and Invalid move of Player 2 " + p2);
+           
+            
+
+
+            if (p1 != p2){
+                if(p1 == "rock" && p2 == "scissors" ||
+                p1 == "scissors" && p2 == "paper" ||
+                p1 == "paper" && p2 == "rock"){
+                    console.log("player 1 wins!")
+                }else console.log("player 2 wins!")
+
+                form.reset();  
+            }else if(p1 ==  p2) {
+                form.reset();
+                return console.log("it's a TIE!")
+            }
+
+            form.reset();
+        }
+    </script>
 </head>
 <body>
     <form>
