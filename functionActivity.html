@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>Function Activity</title>
+    <script>
+        function mystery(form) {
+            let a = document.getElementById("a").value 
+            let b = document.getElementById("b").value
+            
+        if (a > b) {
+            return 0;
+        } else {
+            let result = 0;
+            for (let i = a; i <= b; i++) {
+            result += i;
+            }
+            return console.log(result);
+        } 
+        form.reset();
+        }
+    </script>
+</head>
+<body>
+    <form>
+        a: <input type="number" id="a" placeholder="Type a Number"><br>
+        b: <input type="number" id="b" placeholder="Type a Number"><br><br>
+        <button type="button" onclick="mystery(this.form);">Click Me!</button>
+    </form>
+</body>
+</html>
