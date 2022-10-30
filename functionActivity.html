@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>Function Activity</title>
+    <script>
+        function mystery(form) {
+            let a = document.getElementById("a").value 
+            let b = document.getElementById("b").value
+            
+        if (a > b) {
+            return 0;
+        } else {
+            let result = 0;
+            for (let i = a; i <= b; i++) {
+            result += i;
+            }
+            return console.log(result);
+        } 
+        form.reset();
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+        a) What does mystery(4, 6) return?
+                mystery(4,6) returns, 0456
+        b) How would you call mystery to result in 10?
+                mystery(10,10) returns, 010 which is close enough to 10.
+     -->
+    <form>
+        a: <input type="number" id="a" placeholder="Type a Number"><br>
+        b: <input type="number" id="b" placeholder="Type a Number"><br><br>
+        <button type="button" onclick="mystery(this.form);">Click Me!</button>
+    </form>
+</body>
+</html>

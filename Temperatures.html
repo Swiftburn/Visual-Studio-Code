@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>F&deg; and C&deg; Temperatures</title>
+    <script>
+        function convert(form){
+
+                //Gets celsius from form and converts to fahrenheit
+                let c = (document.getElementById("c").value);
+                    console.log('celsius is ' + c);
+                let ctof = c * 9 / 5 + 32;
+                    console.log('fahrenheit is ' + ctof);
+                let msgc = c + '\xB0C is ' + ctof + '\xB0F.';
+                    console.log(msgc);
+
+            
+                //Gets fahrenheit from form and converts to celsius
+                let f = document.getElementById("f").value;
+                    console.log('fahrenheit is ' + f);
+                let ftoc = (f - 32) * 5 / 9;
+                    console.log('celsius is ' + ftoc);
+                let msgf = f + '\xB0F is ' + ftoc + '\xB0C.';
+                    console.log(msgf);
+            
+
+                //Writes the conversions back into html to display
+                document.getElementById("celsius").innerHTML = msgc
+                document.getElementById("fahrenheit").innerHTML = msgf
+        }
+    </script>
+</head>
+<body>
+    <form>
+        C&deg; to F&deg;: <input type="number" id="c" placeholder="Enter Celsius" size="15"> <br>
+        F&deg; to C&deg;: <input type="number" id="f" placeholder="Enter Fahrenheit" size="15"> <br><br>
+        <button type="button" onclick="convert(this.form);">Click Me!</button>
+        
+
+    </form>
+
+    <p id="celsius">
+
+    </p>
+    <p id="fahrenheit">
+
+    </p>
+</body>
+</html>

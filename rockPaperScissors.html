@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>Rock Paper Scissors</title>
+    <script>
+        function rockPaperScissors(form){
+            console.log("Console works!")
+            let p1 = (document.getElementById("p1").value.toLowerCase());
+            let p2 = (document.getElementById("p2").value.toLowerCase());
+            console.log("Player 1 used " + p1)
+            console.log("Player 2 used " + p2)
+
+            
+            //Checks p1 and p2
+            if(p1 === 'rock' || p1 === 'paper' || p1 === 'scissors'){
+                console.log("p1 check passed!")
+            }else{
+                if(p2 === 'rock' || p2 === 'paper' || p2 === 'scissors'){
+                console.log("p2 check passed!")
+                }else{
+                    form.reset(); 
+                    console.log("Invalid move of Player 1 " + p1)
+                    return console.log("Invalid move of Player 2 " + p2)
+                }
+
+                form.reset(); 
+                return console.log("Invalid move of Player 1 " + p1)
+            }
+
+            //checks p2
+            if(p2 === 'rock' || p2 === 'paper' || p2 === 'scissors'){
+                console.log("p2 check passed!")
+            }else{
+                form.reset(); 
+                return console.log("Invalid move of Player 2 " + p2)
+            }
+            
+            
+
+            //conditions to win
+            if (p1 != p2){
+                if(p1 == "rock" && p2 == "scissors" ||
+                p1 == "scissors" && p2 == "paper" ||
+                p1 == "paper" && p2 == "rock"){
+                    console.log("player 1 wins!")
+                }else console.log("player 2 wins!")
+
+                form.reset();  
+            }else if(p1 ==  p2) {
+                form.reset();
+                return console.log("it's a TIE!")
+            }
+
+            form.reset();
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Player 1: <input type="text" id="p1" placeholder="Rock, Paper, Scissors"><br>
+        Player 2: <input type="text" id="p2" placeholder="Rock, Paper, Scissors"><br><br>
+        <button type="button" onclick="rockPaperScissors(this.form);" >Click Me!</button>
+    </form>
+</body>
+</html>

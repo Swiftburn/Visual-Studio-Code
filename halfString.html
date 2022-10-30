@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adolfo Barrientos">
+    <title>Extract First Half of a String</title>
+    <script>
+        function half(form){
+
+            let word = (document.getElementById("word").value); //calls user input 
+            console.log(word);
+
+
+            if (word.length % 2 == 0){ //if even...
+
+                let sliced = (word.slice(0, word.length / 2)); //word gets sliced in half and stored in variable 'sliced'
+                console.log(sliced);
+
+                document.getElementById("even").innerHTML = 'Even Word: ' + sliced
+            } //if odd... just print back the word
+            else {console.log(word);
+
+            document.getElementById("odd").innerHTML = 'Odd Word: ' + word
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>Extract the First Half of an Even Word</p>
+        <input type="text" id="word" placeholder="Enter a Word"> <br><br>
+        <button type="button" onclick="half(this.form);">Click Me!</button>
+    </form>
+
+    <p id="even">
+    <p id="odd">
+
+    </p>
+    </p>
+
+    
+</body>
+</html>
