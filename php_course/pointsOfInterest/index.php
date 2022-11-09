@@ -33,6 +33,37 @@
         return $attractions;
     }
 
+
+
+
+
+
+
+
+    
+    // if(isset($_GET["city"])){//If I have a valid city... 
+    //     $city = $_GET["city"]; //if city is in list
+
+    //     $attractions = get_list();
+
+    //     if(strcmp($city, "all") == 0){
+    //         header("Content-type: application/json");
+    //         print_r(json_encode($attractions));
+    //     }
+    //     else{
+    //         header("Content-type: text/plain");
+        
+
+    //         if(array_key_exists($city, $attractions)){ //print city
+    //             echo "The best place to visit in ". $city ." is " .$attractions[$city]. ".\n";
+    //         }
+    //         else{
+    //             echo "I did not find that on my list! Perhaps we can add it someday.";
+    //         }
+    //     }
+
+    // }
+
     // function get_list(){
     //     /* Hard code all the places and the attractions in those cities... */
     //     $attractions = array( "Seattle" => "Space Needle",
