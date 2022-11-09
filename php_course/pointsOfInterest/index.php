@@ -1,6 +1,6 @@
 <?php
 
-// I want to know the best places to go in a city... (from list)
+// I want to know the best places to go in a city... (from file)
 
     if(isset($_GET["city"])){ // If I have a valid city...
         $city = $_GET["city"]; // Get city and save in attractions variable
