@@ -14,23 +14,29 @@
     }
 
 
-    //Validate the name
-    if(empty($_POST['name'])){
-      $nameErr = 'Name is required!';
+    //Validate the email
+    if(empty($_POST['email'])){
+      $emailErr = 'Email is required!';
     } else {
-      $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+      $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     }
 
     
-    //Validate the name
-    if(empty($_POST['name'])){
-      $nameErr = 'Name is required!';
+    //Validate the body
+    if(empty($_POST['body'])){
+      $bodyErr = 'Feedback is required!';
     } else {
-      $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+      $body = filter_input(INPUT_POST, 'body', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     }
   }
   echo $nameErr;
   echo $name;
+  echo '<br>';
+  echo $emailErr;
+  echo $email;
+  echo '<br>';
+  echo $bodyErr;
+  echo $body;
 
 
   ?>
