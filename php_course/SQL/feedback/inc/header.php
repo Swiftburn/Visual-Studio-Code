@@ -20,13 +20,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
          <li class="nav-item">
-           <a class="nav-link" href="/sql/feedback/index.php">Home</a>
+           <a class="nav-link" href="/php_course/sql/feedback/index.php">Home</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="/sql/feedback/feedback.php">Feedback</a>
+           <a class="nav-link" href="/php_course/sql/feedback/feedback.php">Feedback</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="/sql/feedback/about.php">About</a>
+           <a class="nav-link" href="/php_course/sql/feedback/about.php">About</a>
          </li>
         </ul>
       </div>
