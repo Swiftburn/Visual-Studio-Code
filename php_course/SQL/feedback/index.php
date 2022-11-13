@@ -29,14 +29,7 @@
       $body = filter_input(INPUT_POST, 'body', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     }
   }
-  echo $nameErr;
-  echo $name;
-  echo '<br>';
-  echo $emailErr;
-  echo $email;
-  echo '<br>';
-  echo $bodyErr;
-  echo $body;
+ 
 
 
   ?>
