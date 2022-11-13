@@ -28,8 +28,23 @@
     } else {
       $body = filter_input(INPUT_POST, 'body', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     }
+
+    
+    if(empty($nameErr) && empty($emailErr) && empty($bodyErr)){
+      //If no errors, add to database...
+      $sql = "INSERT INTO feedback(name, email, body) VALUES ('$name', '$email', '$body')";
+  
+      if(mysqli_query($conn, $sql)){
+        //If all went well...
+        header('Location: feedback.php');
+      } else {
+        //If error exists...
+        echo 'Error: ' . mysqli_error($conn);
+      }
+    }
   }
  
+  
 
 
   ?>
