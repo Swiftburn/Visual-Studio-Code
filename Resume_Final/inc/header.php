@@ -9,13 +9,40 @@
     
 </head>
 <body>
+<div class="background">
     <nav>
         <div class="weather">
             <script src="inc/weather.js"></script>
+                <div class="city">&numsp; City: </div>
+                <div class="temp">&numsp;&numsp; Temp: </div>
+                <div class="humid">&numsp;&numsp; Humidity: </div>
+
+        </div>
+        
+        <div class="pages">
+            <div class="np">
+                <a href="welcome.php">Welcome</a>
+            </div> 
+            &numsp;
+            <div class="np">
+                <a href="projects.php">Projects</a> 
+            </div>
+            
+            <div class="np">
+                <a href="about.php">About Me</a>
+            </div>
+            &numsp;&numsp;
+            <div class="np">
+                <a href="contact.php">Contact</a>
+            </div>
         </div>
         
         
-        <div>
-            <a href="">example</a>
-        </div>
+        
+        
+       
+
+       
+
+        
     </nav>
