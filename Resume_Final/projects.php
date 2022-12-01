@@ -13,3 +13,8 @@
             <li><strong>Russellville Pope County Library (Library Assistant) &#8211; 2014-2016</strong> &#8211; Facilitated effective communication between staff members and Spanish-speaking library patrons and provided customer service to 1000+ of county residents and local community</li>
         </ul>
     </div>
+
+
+
+
+    <?php include 'inc/footer.php'; ?>
