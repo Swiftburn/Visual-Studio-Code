@@ -1,10 +1,45 @@
 body{
-    font-size: 1vw;
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(20, 20, 20);
+}
+body .background{
+    display: flexbox;
+    margin: auto;
+    margin-top: 2.5vw;
+    margin-bottom:2.5vw;
+    max-width: 1000px;
+    background-color: rgb(38, 36, 36);
+    border-style:outset;
+    border-color: cyan; 
     color: white;
 }
-#background{
-   position: relative;
+.background nav{
+    margin: 1.5%;
+    margin-bottom: 3%;
+}
+.background nav div{
+    display:inline-flex;
+}
+.background nav .weather{
+    float: left;
+}
+.background nav .pages{
+    float: right;
+}
+nav .pages .np{
+    width: 70px;
+}
+.background #picture{
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+.background img{
+    max-width: 40%;
+    height: auto;
+}
+/* .background{
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1600px; 
     background-color:rgb(55, 55, 55);
     border-style:outset;
@@ -82,4 +117,8 @@ a:hover{
 }
 a:active{
     color: rgba(10, 238, 10, 0.834);
-}
+} */
+
+
+
+
