@@ -74,7 +74,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact2">
         <label for="body" class="form-label">Message</label>
         <textarea class="form-control <?php echo $bodyErr? 'is-invalid' : null; ?>" id="body" name="body" placeholder="Enter your message"></textarea>
         <div class="invalid-feedback">
@@ -82,11 +82,11 @@
         </div>
     </div>
 
-    <div>
+    <div class="contact">
         <input type="submit" name="submit" value="Send">
     </div>
 
-    <div>
+    <div class="reply">
         <?php echo $reply; ?>
     </div>
 </form>
