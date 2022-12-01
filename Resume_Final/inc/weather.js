@@ -14,9 +14,11 @@
             temp = data;
 
             city = data.city.name + ' '
-            temp = data.list['0'].main.temp
-            document.querySelector('.weather').insertAdjacentHTML('beforeend', city)
-            document.querySelector('.weather').insertAdjacentHTML('beforeend', temp)
+            temp = data.list['0'].main.temp + ' '
+            humid = data.list['0'].main.humidity
+            document.querySelector('.city').insertAdjacentHTML('beforeend', city)
+            document.querySelector('.temp').insertAdjacentHTML('beforeend', temp)
+            document.querySelector('.humid').insertAdjacentHTML('beforeend', humid)
         })
         .catch(error => console.log('Error ' + error.message))
 
