@@ -4,6 +4,8 @@
 
 <div>
     <h1>About Me</h1>
+    <h3>Information Technology Major</h3>
+    <h3>Arkansas Tech University</h3>
     <ul>
         <li><strong>Freelance (Video Editor) &#8211; 2019-present</strong> &#8211; Communicate with clients on specific goals and objectives using a video editor, Davinci Resolve and Photoshop</li><br>
 
